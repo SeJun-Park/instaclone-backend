@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "nodemon --exec node -r @babel/register server.js",
+    "dev": "nodemon",
     "migrate": "npx prisma migrate dev",
     "studio": "npx prisma studio"
   },
@@ -16,20 +16,41 @@
     "@babel/node": "^7.23.9",
     "@babel/preset-env": "^7.24.5",
     "@babel/register": "^7.24.6",
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/graphql-upload": "^16.0.7",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.14.2",
+    "@types/ws": "^8.5.10",
     "nodemon": "^3.1.0",
-    "prisma": "^5.14.0"
+    "prisma": "^5.15.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.4.5"
   },
   "dependencies": {
     "@apollo/server": "^4.10.4",
+    "@aws-sdk/client-s3": "^3.600.0",
+    "@aws-sdk/lib-storage": "^3.600.0",
     "@graphql-tools/load": "^8.0.2",
     "@graphql-tools/load-files": "^7.0.0",
     "@graphql-tools/merge": "^9.0.4",
     "@graphql-tools/mock": "^9.0.3",
     "@graphql-tools/schema": "^10.0.4",
     "@graphql-tools/utils": "^10.2.1",
-    "@prisma/client": "^5.14.0",
+    "@prisma/client": "^5.15.0",
+    "aws-sdk": "^2.1644.0",
+    "bcrypt": "^5.1.1",
     "dotenv": "^16.4.5",
-    "graphql": "^16.8.1",
-    "graphql-tag": "^2.12.6"
+    "express": "^4.19.2",
+    "graphql": "^16.8.2",
+    "graphql-subscriptions": "^2.0.0",
+    "graphql-tag": "^2.12.6",
+    "graphql-upload": "^16.0.2",
+    "graphql-ws": "^5.16.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "ws": "^8.17.1"
   }
 }

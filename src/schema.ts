@@ -8,10 +8,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 async function loadSchema() {
-  const loadedTypes = await loadFiles(join(__dirname, '**/*.typeDefs.js'));
+  const loadedTypes = await loadFiles(join(__dirname, '**/*.typeDefs.ts'));
   const typeDefs = mergeTypeDefs(loadedTypes);
 
-  const loadedResolvers = await loadFiles(join(__dirname, '**/*.{queries,mutations}.js'));
+  const loadedResolvers = await loadFiles(join(__dirname, '**/*.resolvers.ts'));
   const resolvers = mergeResolvers(loadedResolvers);
 
   return makeExecutableSchema({ typeDefs, resolvers });
